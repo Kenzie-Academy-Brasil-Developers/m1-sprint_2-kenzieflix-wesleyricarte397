@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  background-color: rgb(20, 20, 20);
+  color: aliceblue;
+  font-family: "Alegreya Sans", sans-serif;
+}
+/*Container da cabeça da página*/
+.cabecalho {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 30px;
+}
+/*Container do logotipo KenzieFlix*/
+#kenzieflixlogo {
+  padding: 30px;
+  display: block;
+  margin: 0 auto;
+}
+/*Container da frase "Quem está assistindo?"*/
+#quemestaassistindo {
+  padding: 15px;
+  margin: 0 auto;
+  flex-direction: column;
+  text-align: center;
+  font-weight: 700;
+}
+/*Lista não ordenada de usuários*/
+.listaUsuarios {
+  list-style: none;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* Lista de usuários/ container por container geral*/
+.user {
+  opacity: 70%;
+  width: 100%;
+  max-width: 160px;
+  margin: 0 5px;
+}
+/*Regra :hover para o container completo de usuário*/
+.user:hover {
+  opacity: 100%;
+  font-weight: 600;
+}
+/* Container full somente das fotos, para centralizá-las*/
+.user div img {
+  width: 100%;
+  max-width: 160px;
+  height: 100%;
+  max-height: 160px;
+  text-align: center;
+  border-radius: 8px;
+}
+/* ID criado para as regras das fotos em si*/
+#containerperfil {
+  background-color: rgb(40, 40, 40);
+  border: 2px solid rgb(40, 40, 40);
+  display: flex;
+  width: 100%;
+  max-width: 160px;
+  height: 100%;
+  max-height: 160px;
+  text-align: center;
+  border-radius: 8px;
+}
+/* Regra :hover para aparecer borda branca ao passar o mouse nos perfis*/
+#containerperfil:hover {
+  border: 2px solid rgba(204, 204, 204, 0.37);
+}
+/*ID criado exclusivamente para a imagem de adicionar perfil, pois ela devia ser menor no container full de perfil*/
+#addperfilimg {
+  width: 40%;
+  height: 40%;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* Regra de parágrafo para a linha de nome de usuário*/
+.user p {
+  text-align: center;
+  font-size: 15px;
+}
+/*Container geral de ".config" que seria o box de Gerenciar perfis*/
+.config {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+/*Container do botão Gerenciar Perfis*/
+#gerenciar {
+  width: 100%;
+  max-width: 170px;
+  color: aliceblue;
+  opacity: 70%;
+  border: 2px solid rgba(204, 204, 204, 0.37);
+  border-radius: 18px;
+  background-color: rgb(20, 20, 20);
+  margin: auto;
+  text-align: center;
+}
+/* Regra :hover para o botão de Gerenciar Perfis*/
+#gerenciar:hover {
+  color: rgb(20, 20, 20);
+  background-color: aliceblue;
+  opacity: 100%;
+}
